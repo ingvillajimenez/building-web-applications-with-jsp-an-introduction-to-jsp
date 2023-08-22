@@ -1,14 +1,13 @@
+<%@ page import = "com.skillsoft.NameUtils" %>
 <html>
     <hea>
         <title> Welcome to JSP </title>
     </head>
+
     <body>
-    <%
-        for (int i=0; i <= 10; i++) {
 
-            out.println(i);
+        Upper case version of "hello world" from a separate source :
+        <%= NameUtils.makeItUpper("hello world") %>
 
-        }
-    %>
     </body>
 </html>
