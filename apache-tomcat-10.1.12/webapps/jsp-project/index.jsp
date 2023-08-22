@@ -1,13 +1,17 @@
-<%@ page import = "com.skillsoft.NameUtils" %>
 <html>
-    <hea>
+    <head>
         <title> Welcome to JSP </title>
     </head>
 
     <body>
 
-        Upper case version of "hello world" from a separate source :
-        <%= NameUtils.makeItUpper("hello world") %>
+        <b>Request user agent:</b>
+        <%=request.getHeader("User-Agent")%>
+
+        <br/><br/>
+
+        <b>Request locale:</b>
+        <%= request.getLocale() %>
 
     </body>
 </html>
