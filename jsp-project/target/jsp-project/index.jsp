@@ -1,5 +1,14 @@
 <html>
-<body>
-<h2>Hello World!!!</h2>
-</body>
+    <hea>
+        <title> Welcome to JSP </title>
+    </head>
+    <body>
+    <%
+        for (int i=0; i <= 10; i++) {
+
+            out.println(i);
+
+        }
+    %>
+    </body>
 </html>
